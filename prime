@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+Dir["lib/*.rb"].each{|f| load f}
+
+
+if ['-h','--help'].include?(ARGV[0])
+  puts <<-eos
+  Usage:
+    prime [ARGUMENT]       : Print prime table up to ARGUMENT (integer or integer-like - defaults to 10 if omitted)
+    prime -h, prime --help : Print this message
+  eos
+else
+  table = PrimeTable.new(ARGV[0] || 10)
+  table.print_table
+end
+
