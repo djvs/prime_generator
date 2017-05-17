@@ -4,10 +4,10 @@ Will print out a multiplication table of the first n prime numbers.
 
 **Invocation**
 ```
-prime # defaults to 10
-prime 10
-prime 30
-prime -h, prime --help # Help screen
+./prime # defaults to 10
+./prime 10
+./prime 30
+./prime -h, prime --help # Help screen
 ```
 
 **Running tests**
